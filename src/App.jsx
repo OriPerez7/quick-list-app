@@ -29,8 +29,8 @@ const App = () => {
 
   return (
     <div className="max-w-md mx-auto mt-10">
-      <h1 className="text-2xl font-bold text-center mb-5">To-Do List</h1>
-      <AddTodo addTodo={addTodo} />
+      <h1 className="text-3xl font-bold text-center mb-5 font-title uppercase">To-Do List</h1>
+      <AddTodo addTodo={addTodo}/>
       <TodoList todos={todos} toggleComplete={toggleComplete} deleteTodo={deleteTodo} />
     </div>
   );

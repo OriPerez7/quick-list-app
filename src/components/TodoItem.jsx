@@ -15,7 +15,7 @@ const TodoItem = ({ todo, toggleComplete, deleteTodo }) => {
         {check ? <RiCheckboxLine /> : <RiCheckboxBlankLine />}
       </button>
       <div
-        className={`flex-1 ${check ? 'line-through' : ''}`}>
+        className={`font-body capitalize flex-1 ${check ? 'line-through' : ''}`}>
         {todo.text}
       </div>
       <button

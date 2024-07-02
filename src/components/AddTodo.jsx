@@ -17,10 +17,10 @@ const AddTodo = ({ addTodo }) => {
         type="text"
         value={todo}
         onChange={(e) => setTodo(e.target.value)}
-        className="flex-1 p-2 border rounded"
-        placeholder="Add a new task"
+        className="flex-1 p-2 border rounded font-body"
+        placeholder="Create a new task"
       />
-      <button type="submit" className="ml-2 p-2 bg-blue-500 text-white rounded">
+      <button type="submit" className="ml-2 p-2 bg-blue-500 text-white rounded font-body">
         Add
       </button>
     </form>
