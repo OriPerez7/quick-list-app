@@ -19,7 +19,7 @@ const TodoItem = ({ todo, toggleComplete, deleteTodo }) => {
         {todo.text}
       </div>
       <button
-        className="ml-2 mr-1 text-red-500 text-lg hover:text-2xl"
+        className="ml-2 mr-1 text-[#D20F1F] text-lg hover:text-2xl"
         onClick={() => deleteTodo(todo.id)}
       >
         <MdDelete />

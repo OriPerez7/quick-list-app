@@ -20,7 +20,7 @@ const AddTodo = ({ addTodo }) => {
         className="flex-1 p-2 border rounded font-body"
         placeholder="Create a new task"
       />
-      <button type="submit" className="ml-2 p-2 bg-blue-500 text-white rounded font-body">
+      <button type="submit" className="ml-2 p-2 bg-[#456990] text-white rounded font-body">
         Add
       </button>
     </form>
