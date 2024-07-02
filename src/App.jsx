@@ -1,10 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import AddTodo from './components/AddTodo';
 import TodoList from './components/TodoList';
 import { v4 as uuidv4 } from 'uuid';
 
 const App = () => {
-  const [todos, setTodos] = useState([]);
+  const [todos, setTodos] = useState(() => {
+    const savedTodos = localStorage.getItem('todos');
+    return savedTodos ? JSON.parse(savedTodos) : [];
+  });
+
+  useEffect(() => {
+    localStorage.setItem('todos', JSON.stringify(todos));
+  }, [todos])
 
   const addTodo = (text) => {
     const newTodo = {
